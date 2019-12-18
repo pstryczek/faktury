@@ -1,0 +1,49 @@
+{
+  "mailgun_failed_load_api_key": "Nie mozna wczytac klicza MailGun API.",
+  "mailgun_failed_load_domain": "Nie mozna wczytac domeny MailGun.",
+  "mailgun_error_send_email": "Blad przy wysylce potwierdzenia email, rejestracja nie udana.",
+
+  "item_name_exists": "Przedmiot o nazwie '{}' jzu istnieje.",
+  "item_error_inserting": "Wyslapil blad podczas dodawania przedmiotu.",
+  "item_not_found": "Przedmiot nie znaleziony.",
+  "item_deleted": "Przedmiot usuniety.",
+
+  "confirmation_not_found": "Nie znaleziono odniesienia do potwierdzenia.",
+  "confirmation_expired": "Link wygasl.",
+  "confirmation_already_confirmed": "Rejestracja zostala potwierdzona juz wczesniej.",
+  "confirmation_resend_fail": "Internal server error. Blad przy ponownej wysylce maila.",
+  "confirmation_resend_successful": "Potwierdzenie email zostalo pomyslnie wyslane ponownie.",
+
+  "store_name_exists": "Sklep o nazwie '{}' juz istnieje.",
+  "store_error_inserting": "Wystapil blad podczas dodawania sklepu.",
+  "store_not_found": "Sklep nie znaleziony.",
+  "store_deleted": "Sklep dodany.",
+
+  "user_username_exists": "Uzytkownik o tej nazwie juz istnieje.",
+  "user_email_exists": "Uzytkownik z tym adresem email juz istnieje.",
+  "user_not_found": "Nie znaleziono uzytkownika.",
+  "user_deleted": "Uzytkownik usuniety.",
+  "user_invalid_credentials": "Nieprawidlowe dane!",
+  "user_logged_out": "Uzytkownik <id={}> pomyślnie wylogowany.",
+  "user_not_confirmed": "Nie potwierdziles swojej rejestracji, sprawdz swoj email: <{}>.",
+  "user_error_creating": "Internal server error. Nie udalo sie stworzyc uzytkownika.",
+  "user_registered": "Konto pomyslnie utworzone, email z linkiem aktywacyjnym zostal wyslany na twoj adres email, prosze o sprawdzenie.",
+
+  "image_uploaded": "Obraz '{}' wyslany",
+  "image_illegal_extension": "Rozszezenie '{}' nie jest dozwolone.",
+  "image_illegal_file_name": "Niedozwolona nazwa pliku '{}'.",
+  "image_not_found": "Nie znaleziono obrazu '{}'.",
+  "image_deleted": "Obraz '{}' usuniety!",
+  "image_delete_failed": "Nie udalo sie usunac obrazu '{}'",
+
+  "avatar_delete_failed": "Nie udalo sie usunac avatara '{}'",
+  "avatar_uploaded": "Avatar '{}' zostal wrzucony!",
+  "image_illegal_extension": "Niepoprawny format pliku '{}'",
+  "avatar_not_found": "Nieznaleziono avatara.",
+
+  "invoice_not_found": "Nieznaleziono faktury.",
+  "invoice_ref_exists": "Numer faktury istnieje!",
+  "invoice_org_exists":"Organizacja z faktury istnieje!",
+  "invoice_registered": "Faktura zostala dodana!",
+  "invoice_error_adding": "Blad w dodawaniu faktury"
+}
