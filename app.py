@@ -35,10 +35,11 @@ from db import db
 from ma import ma
 from blacklist import BLACKLIST
 from resources.user import UserRegister, UserLogin, User, TokenRefresh, UserLogout
-# from resources.items import Item, ItemList
-# from resources.invoice import InvoiceList, Invoice, InvoiceRegister
+from resources.items import Item, ItemList, ItemRegister
+from resources.invoice import InvoiceList, Invoice, InvoiceRegister
 from resources.confirmation import Confirmation, ConfirmationByUser
-from resources.addresses import Address, AddressList
+from resources.addresses import Address, AddressList, AddressRegister
+from resources.organization import Organization, OrganizationList
 
 app = Flask(__name__)
 load_dotenv(".env", verbose=True)
@@ -70,12 +71,13 @@ def check_if_token_in_blacklist(decrypted_token):
     return decrypted_token["jti"] in BLACKLIST
 
 
-# api.add_resource(Item, "/item/<string:name>")
-# api.add_resource(ItemList, "/items")
-#
-# api.add_resource(InvoiceRegister, "/invoice/register")
-# api.add_resource(Invoice, "/invoice/<int:ref_number>")
-# api.add_resource(InvoiceList, "/invoices")
+api.add_resource(Item, "/item/<string:name>")
+api.add_resource(ItemList, "/items")
+api.add_resource(ItemRegister, "/regit")
+
+api.add_resource(InvoiceRegister, "/reginv")
+api.add_resource(Invoice, "/invoice/<int:id>")
+api.add_resource(InvoiceList, "/invoices")
 
 api.add_resource(UserRegister, "/register")
 api.add_resource(User, "/user/<int:user_id>")
@@ -88,6 +90,10 @@ api.add_resource(ConfirmationByUser, "/confirmation/user/<int:user_id>")
 
 api.add_resource(Address, "/address/<string:address>")
 api.add_resource(AddressList, "/addresses")
+api.add_resource(AddressRegister, "/regadd")
+
+api.add_resource(Organization, "/organization/<string:name>")
+api.add_resource(OrganizationList, "/organizations")
 
 
 if __name__ == "__main__":

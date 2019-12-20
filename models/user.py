@@ -4,7 +4,7 @@ from flask import request, url_for
 from db import db
 from libs.mailgun import Mailgun
 from models.confirmation import ConfirmationModel
-# from models.invoice import InvoiceModel
+from models.invoice import InvoiceModel
 
 
 class UserModel(db.Model):
@@ -14,8 +14,8 @@ class UserModel(db.Model):
     username = db.Column(db.String(80), nullable=False, unique=True)
     password = db.Column(db.String(80), nullable=False)
     email = db.Column(db.String(80), nullable=False, unique=True)
-    # invoice_id = db.Column(db.Integer, db.ForeignKey("invoices.id"), nullable=True)
-    # invoice = db.relationship("InvoiceModel", foreign_keys=[invoice_id])
+    invoice_id = db.Column(db.Integer, db.ForeignKey("invoices.id"), nullable=True)
+
 
     confirmation = db.relationship(
         "ConfirmationModel", lazy="dynamic", cascade="all, delete-orphan"

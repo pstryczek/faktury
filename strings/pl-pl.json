@@ -3,10 +3,12 @@
   "mailgun_failed_load_domain": "Nie mozna wczytac domeny MailGun.",
   "mailgun_error_send_email": "Blad przy wysylce potwierdzenia email, rejestracja nie udana.",
 
-  "item_name_exists": "Przedmiot o nazwie '{}' jzu istnieje.",
+  "item_name_exists": "Przedmiot o nazwie '{}' juz istnieje.",
   "item_error_inserting": "Wyslapil blad podczas dodawania przedmiotu.",
   "item_not_found": "Przedmiot nie znaleziony.",
   "item_deleted": "Przedmiot usuniety.",
+  "item_error_adding": "Blad podczas dodawania przedmiotu",
+  "item_registered": "Przedmiot dodany!",
 
   "confirmation_not_found": "Nie znaleziono odniesienia do potwierdzenia.",
   "confirmation_expired": "Link wygasl.",
@@ -45,5 +47,21 @@
   "invoice_ref_exists": "Numer faktury istnieje!",
   "invoice_org_exists":"Organizacja z faktury istnieje!",
   "invoice_registered": "Faktura zostala dodana!",
-  "invoice_error_adding": "Blad w dodawaniu faktury"
+  "invoice_error_adding": "Blad w dodawaniu faktury",
+  "invoice_error_inserting": "Blad podczas dodawania faktury.",
+  "invoice_deleted": "Faktura usunieta",
+
+
+  "organization_not_found": "Nie znaleziono firmy.",
+  "organization_name_exists": "Nazwa '{}' juz istnieje!",
+  "organization_error_inserting": "Blad podczas dodawania firmy.",
+  "organization_deleted": "Usunieto firme !",
+  "organization_not_found": "Nie znaleziono nazwy.",
+
+  "address_registered": "Dodano adres!",
+  "address_error_creating": "Blad podczas dodawania adresu.",
+  "address_not_found": "Adres nie znaleziony.",
+  "address_exists": "Adres '{}' istnieje!",
+  "address_error_inserting": "Blad podczas dodawania adresu.",
+  "address_deleted": "Adres usuniety!"
 }
