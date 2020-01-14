@@ -71,6 +71,7 @@ class Address(Resource):
         # return address_schema.dump(addresses), 201
 
     @classmethod
+    @jwt_required
     def delete(cls, address: str):
         address = AddressModel.find_by_id(address)
         if not address:
